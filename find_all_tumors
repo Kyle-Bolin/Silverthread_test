@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+import sys
+import argparse
+import find_all_tumors
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--inputdir",type=str, action="store")
+parser.add_argument("--outputfile", type=str, action="store")
+args = parser.parse_args()
+
+find_all_tumors.find_all_tumors(args.inputdir,args.outputfile)
