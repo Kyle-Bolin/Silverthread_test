@@ -18,6 +18,7 @@ Ussage:
             --inputfile "yourinfile.in"  *required*
     EX: >>>find_tumor --inputfile tumor.in
             True,4,4
+    Most of the algorithm was converted from JavaScript to Python by me from problem https://stackoverflow.com/questions/52885248/how-can-i-find-and-store-the-groups-of-values-in-a-two-dimensional-array solved by Slider (https://stackoverflow.com/users/1822698/slider) 
     
     find_all_tumors:
         Scans a inputed directory for .in files and then runs find_tumor from find_tumor.py on each one. The result is then placed in a csv file for all results.
