@@ -1,5 +1,0 @@
-Filename,HasTumor,Rows,Columns
-./Slice_inputs/messy_input.in,False,4,4
-./Slice_inputs/sample_tumor.in,True,50,80
-./Slice_inputs/wrong_size.in,Error,NA,NA
-./Slice_inputs/sample_no_tumor.in,False,50,80
