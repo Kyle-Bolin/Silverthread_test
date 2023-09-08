@@ -58,6 +58,7 @@ def get_neighbors(matrix,i,j):
     if (i + 1 < len(matrix) and j - 1 > 0 and matrix[i+1][j-1] == letter): n.append(str(i+1)+','+str(j-1))
     return n
 
+
 def get_connected_components(graph,matrix):
     componet_id = 0
     vertex_componets = {}  

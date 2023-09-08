@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-import sys
 import argparse
 import find_all_tumors
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--inputdir",type=str, action="store")
 parser.add_argument("--outputfile", type=str, action="store")
+parser.add_argument("--parallel", type=int,action="store",default=1)
 args = parser.parse_args()
 
-find_all_tumors.find_all_tumors(args.inputdir,args.outputfile)
+if args.parallel > 1:
+    find_all_tumors.find_all_tumors_multithread(args.inputdir,args.outputfile,args.parallel)
+else:
+    find_all_tumors.find_all_tumors(args.inputdir,args.outputfile)
