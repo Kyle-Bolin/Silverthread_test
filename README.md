@@ -5,11 +5,13 @@ Date: 9/7/2023
 Problems Completed: 1,2,3
 
 How to Install:
-install python3 if not already installed
-clone this repo
-copy find_all_tumors,find_all_tumors.py,find_tumor, and find_tumor.py to a location on your $PATH (ex:~/usr/local/bin)
+
+    install python3 if not already installed
+    clone this repo
+    copy find_all_tumors,find_all_tumors.py,find_tumor, and find_tumor.py to a location on your $PATH (ex:~/usr/local/bin)
 
 Ussage:
+
     find_tumor:
         takes a .in file, filters the data to only letters, checks to see if the data forms a square matrix, then outputs true/false if a tumor is suspected, number of rows, number of columns to stdout. will take anyfile for the input but will fail anyfile with data not in a square matrix after it is filtered and will output error results to stdout.
             Arguments:
@@ -31,7 +33,8 @@ Ussage:
 
     EX: find_all_tumors -inputdir ./Slice_inputs --outputfile results.csv --parallel 5
 
-    Pytest:
+Pytest:
+
         test_tumor.py is the test script 
         Slice_inputs has everything to test if anychanges are made
         It is recomended that Pytest is ran in a virtual environment 
