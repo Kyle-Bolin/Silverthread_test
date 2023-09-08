@@ -32,7 +32,7 @@ Ussage:
         --outputfile "results.csv" *required*
         --parallel "Number of threads wanted"
 
-    EX: find_all_tumors -inputdir ./Slice_inputs --outputfile results.csv --parallel 5
+    EX: >>>find_all_tumors -inputdir ./Slice_inputs --outputfile results.csv --parallel 5
 
 Pytest:
 
